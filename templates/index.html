@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Air Pollution</title>
+</head>
+<style>
+	body {
+		background-image: url('../static/back.jpeg');
+		background-repeat: no-repeat;
+		font-family: Tahoma;
+		font-size: 16px;
+		object-fit: cover;
+		background-size: 1550px 750px;
+		
+	}
+
+	h1{
+		text-align: center;
+		color: black;
+	}
+	label{
+		display: block;
+		margin: 0.5rem 0;
+		
+	}
+	input{
+		margin: 10px 0 0 0;
+		width: 40%;
+		min-height: 2em;
+	}
+	input{
+		
+		border: 1px solid #0a0a23;
+		border: 2px solid;
+		border-radius: 12px;
+		padding: 5px;
+	  }
+	input[type=submit]{
+		background-color: #f1f1f1;
+		color: black;
+		font-size: 16px;
+	   
+		border: none;
+		cursor: pointer;
+		border-radius: 5px;
+		text-align: center;
+	} 
+	  
+
+	form {
+		width: 60vw;
+		
+		margin: 25px 50px 75px 100px;
+		padding-bottom: 2em;
+	  }
+	  label{
+		color: rgb(255, 255, 255);
+	  }
+	  p{
+		color: #f1f1f1;
+		text-align: center;
+
+	  }
+	  
+</style>
+<body>
+	<h1>Air Pollution Prediction</h1>
+	<form method="POST" action="/">
+		<label for="so2">SO2:</label>
+		<input type="number" name="so2" id="so2" required>
+		<br><br>
+		<label for="no2">NO2:</label>
+		<input type="number" name="no2" id="no2" required>
+		<br><br>
+		<label for="rspm">RSPM:</label>
+		<input type="number" name="rspm" id="rspm" required>
+		<br><br>
+		<label for="spm">SPM:</label>
+		<input type="number" name="spm" id="spm" required>
+		<br><br>
+		<input type="submit" value="Predict">
+	</form>
+	
+</body>
+</html>
